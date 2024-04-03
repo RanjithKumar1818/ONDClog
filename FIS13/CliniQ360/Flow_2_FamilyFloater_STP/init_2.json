@@ -1,0 +1,152 @@
+{
+  "context": {
+    "action": "init",
+    "bap_id": "staging.cliniq360.com",
+    "bap_uri": "https://staging.cliniq360.com/bapl",
+    "bpp_id": "api.abcscuat.com",
+    "bpp_uri": "https://api.abcscuat.com/healthinsurance/ondc-preprod",
+    "domain": "ONDC:FIS13",
+    "location": {
+      "country": {
+        "code": "IND"
+      },
+      "city": {
+        "code": "*"
+      }
+    },
+    "transaction_id": "120751f9-94b5-476c-a59a-075c10bf2da7",
+    "message_id": "076093de-e500-49d6-af16-ab3ddf8f6bc6",
+    "timestamp": "2024-03-29T17:04:01.095Z",
+    "ttl": "PT24H",
+    "version": "2.0.0"
+  },
+  "message": {
+    "order": {
+      "fulfillments": [
+        {
+          "customer": {
+            "contact": {
+              "email": "ktest@gmail.com",
+              "phone": "8454833235"
+            },
+            "person": {
+              "name": "ktest@gmail.com"
+            }
+          }
+        }
+      ],
+      "items": [
+        {
+          "add_ons": [
+            {
+              "id": "CRITICAL_ILLNESS_COVER",
+              "quantity": {
+                "selected": {
+                  "count": 1
+                }
+              }
+            },
+            {
+              "id": "SUPER_CREDIT",
+              "quantity": {
+                "selected": {
+                  "count": 1
+                }
+              }
+            }
+          ],
+          "id": "CODI_Digital_I2",
+          "parent_item_id": "CODI_I2",
+          "xinput": {
+            "form_response": {
+              "submission_id": "20240329165906190",
+              "status": "SUCCESS"
+            }
+          }
+        }
+      ],
+      "provider": {
+        "id": "P1"
+      },
+      "payments": [
+        {
+          "collected_by": "BPP",
+          "status": "NOT-PAID",
+          "type": "PRE-ORDER",
+          "params": {
+            "amount": "1000",
+            "bank_account_number": "1800002341",
+            "bank_code": "SBIN0001234",
+            "currency": "INR"
+          },
+          "tags": [
+            {
+              "descriptor": {
+                "code": "BUYER_FINDER_FEES"
+              },
+              "display": false,
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "BUYER_FINDER_FEES_TYPE"
+                  },
+                  "value": "percent-annualized"
+                },
+                {
+                  "descriptor": {
+                    "code": "BUYER_FINDER_FEES_PERCENTAGE"
+                  },
+                  "value": "5"
+                }
+              ]
+            },
+            {
+              "descriptor": {
+                "code": "SETTLEMENT_TERMS"
+              },
+              "display": false,
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "SETTLEMENT_WINDOW"
+                  },
+                  "value": "PT60M"
+                },
+                {
+                  "descriptor": {
+                    "code": "SETTLEMENT_BASIS"
+                  },
+                  "value": "Delivery"
+                },
+                {
+                  "descriptor": {
+                    "code": "SETTLEMENT_TYPE"
+                  },
+                  "value": "upi"
+                },
+                {
+                  "descriptor": {
+                    "code": "DELAY_INTEREST"
+                  },
+                  "value": "2.5"
+                },
+                {
+                  "descriptor": {
+                    "code": "STATIC_TERMS"
+                  },
+                  "value": "https://www.icicibank.com/personal-banking/loans/personal-loan"
+                },
+                {
+                  "descriptor": {
+                    "code": "SETTLEMENT_AMOUNT"
+                  },
+                  "value": "400"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

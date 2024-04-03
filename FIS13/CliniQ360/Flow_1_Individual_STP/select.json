@@ -1,0 +1,43 @@
+{
+  "context": {
+    "action": "select",
+    "bap_id": "staging.cliniq360.com",
+    "bap_uri": "https://staging.cliniq360.com/bapl",
+    "bpp_id": "api.abcscuat.com",
+    "bpp_uri": "https://api.abcscuat.com/healthinsurance/ondc-preprod",
+    "domain": "ONDC:FIS13",
+    "location": {
+      "country": {
+        "code": "IND"
+      },
+      "city": {
+        "code": "*"
+      }
+    },
+    "transaction_id": "4c449397-3428-48ef-88c2-1a5cdc8b5445",
+    "message_id": "3480bdbb-69cc-4ba6-86a2-28e4a01cff7f",
+    "timestamp": "2024-03-29T11:16:29.035Z",
+    "ttl": "PT24H",
+    "version": "2.0.0"
+  },
+  "message": {
+    "order": {
+      "items": [
+        {
+          "add_ons": [],
+          "id": "CODI_Digital_I1",
+          "parent_item_id": "CODI_I1",
+          "xinput": {
+            "form_response": {
+              "status": "SUCCESS",
+              "submission_id": "a9e24d4e-9a16-4f19-8fe4-c8c5651f9664"
+            }
+          }
+        }
+      ],
+      "provider": {
+        "id": ""
+      }
+    }
+  }
+}

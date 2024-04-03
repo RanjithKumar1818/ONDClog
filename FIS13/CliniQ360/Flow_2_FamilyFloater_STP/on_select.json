@@ -1,0 +1,153 @@
+{
+  "context": {
+    "action": "on_select",
+    "bap_id": "staging.cliniq360.com",
+    "bap_uri": "https://staging.cliniq360.com/bapl",
+    "bpp_id": "api.abcscuat.com",
+    "bpp_uri": "https://api.abcscuat.com/healthinsurance/ondc-preprod",
+    "domain": "ONDC:FIS13",
+    "location": {
+      "country": {
+        "code": "IND"
+      },
+      "city": {
+        "code": "*"
+      }
+    },
+    "message_id": "e0f0ef6e-f716-406e-b9c1-9e6dda1bb52a",
+    "timestamp": "2024-03-29T11:30:01.251Z",
+    "transaction_id": "120751f9-94b5-476c-a59a-075c10bf2da7",
+    "ttl": "PT24H",
+    "version": "2.0.0"
+  },
+  "message": {
+    "order": {
+      "fulfillments": [
+        {
+          "customer": {
+            "contact": {
+              "email": "ktest@gmail.com",
+              "phone": "8454833235"
+            },
+            "person": {
+              "name": "Karishma Kadam"
+            }
+          }
+        }
+      ],
+      "items": [
+        {
+          "category_ids": [
+            "C2",
+            "C3"
+          ],
+          "descriptor": {
+            "name": "Activ One NXT",
+            "code": "CODI",
+            "long_desc": "Aditya Birla Health Insurance Activ One NXT",
+            "short_desc": "ABHI Activ One NXT"
+          },
+          "id": "CODI_Digital_I2",
+          "parent_item_id": "CODI_I2",
+          "tags": [
+            {
+              "descriptor": {
+                "name": "Activ One NXT Information",
+                "code": "GENERAL_INFO"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "name": "COVERAGE_AMOUNT",
+                    "code": "COVERAGE_AMOUNT"
+                  },
+                  "value": "2000000"
+                }
+              ]
+            }
+          ],
+          "time": {
+            "duration": "P1Y",
+            "label": "TENURE"
+          },
+          "xinput": {
+            "head": {
+              "descriptor": {
+                "name": "Customer Information"
+              },
+              "headings": [
+                "EKYC"
+              ]
+            },
+            "form": {
+              "id": "FO4",
+              "mime_type": "text/html",
+              "url": "https://abhi-digital-uat.adityabirlahealth.com/healthinsurance/ondc/forms/kyc/iAgreeKyc?formId=20240329165906190",
+              "resubmit": true
+            },
+            "required": true
+          },
+          "price": {
+            "currency": "INR"
+          }
+        }
+      ],
+      "provider": {
+        "descriptor": {
+          "name": "Aditya Birla Capital Health Insurance",
+          "long_desc": "Buying Health Insurance Policy doesn't have to be difficult.",
+          "short_desc": "Aditya Birla Capital Health Insurance",
+          "images": [
+            {
+              "url": "https://marketingcontet.azureedge.net/assets/img/ABG_Birla-3D-Logo_Mobile.png",
+              "size_type": "xs"
+            }
+          ]
+        },
+        "id": "P1"
+      },
+      "quote": {
+        "id": "Q1",
+        "breakup": [
+          {
+            "price": {
+              "value": "15281",
+              "currency": "INR"
+            },
+            "title": "BASE_PRICE"
+          },
+          {
+            "price": {
+              "value": "2476",
+              "currency": "INR"
+            },
+            "title": "TAX"
+          },
+          {
+            "price": {
+              "value": "0",
+              "currency": "INR"
+            },
+            "title": "PROCESSING_FEE"
+          },
+          {
+            "price": {
+              "value": "0",
+              "currency": "INR"
+            },
+            "title": "CONVIENCE_FEE"
+          }
+        ],
+        "price": {
+          "value": "16228",
+          "currency": "INR"
+        }
+      },
+      "status": "FORM_PROCESSED",
+      "created_at": "2024-03-29T11:30:01.251Z",
+      "updated_at": "2024-03-29T11:30:01.251Z",
+      "id": "O1"
+    }
+  },
+  "sourceUrl": "https://api.abcscuat.com/healthinsurance/ondc-preprod"
+}

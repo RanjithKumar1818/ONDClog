@@ -1,0 +1,256 @@
+{
+  "context": {
+    "action": "on_confirm",
+    "bap_id": "staging.cliniq360.com",
+    "bap_uri": "https://staging.cliniq360.com/bapl",
+    "bpp_id": "abhi-digital-uat.adityabirlahealth.com",
+    "bpp_uri": "https://abhi-digital-uat.adityabirlahealth.com/healthinsurance/ondc",
+    "domain": "ONDC:FIS13",
+    "location": {
+      "country": {
+        "code": "IND"
+      },
+      "city": {
+        "code": "*"
+      }
+    },
+    "message_id": "b9c98e04-dd3e-47fa-a093-005a81b077ac",
+    "timestamp": "2024-03-29T11:36:04.063Z",
+    "transaction_id": "120751f9-94b5-476c-a59a-075c10bf2da7",
+    "ttl": "PT24H",
+    "version": "2.0.0"
+  },
+  "message": {
+    "order": {
+      "fulfillments": [
+        {
+          "customer": {
+            "contact": {
+              "email": "ktest@gmail.com",
+              "phone": "8454833235"
+            }
+          },
+          "state": {
+            "descriptor": {
+              "code": "GRANTED"
+            }
+          },
+          "id": "FPT87526349                                                  "
+        }
+      ],
+      "payments": [
+        {
+          "collected_by": "BPP",
+          "params": {
+            "amount": "22431",
+            "bank_account_number": "1800002341",
+            "bank_code": "SBIN0001234",
+            "currency": "INR",
+            "transaction_id": "U1230002030746"
+          },
+          "status": "PAID",
+          "type": "PRE-ORDER",
+          "tags": [
+            {
+              "descriptor": {
+                "code": "BUYER_FINDER_FEES"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "BUYER_FINDER_FEES_TYPE"
+                  },
+                  "value": "percent-annualized"
+                },
+                {
+                  "descriptor": {
+                    "code": "BUYER_FINDER_FEES_PERCENTAGE"
+                  },
+                  "value": "5"
+                }
+              ]
+            },
+            {
+              "descriptor": {
+                "code": "SETTLEMENT_TERMS"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "SETTLEMENT_WINDOW"
+                  },
+                  "value": "PT60M"
+                },
+                {
+                  "descriptor": {
+                    "code": "SETTLEMENT_BASIS"
+                  },
+                  "value": "Delivery"
+                },
+                {
+                  "descriptor": {
+                    "code": "SETTLEMENT_TYPE"
+                  },
+                  "value": "upi"
+                },
+                {
+                  "descriptor": {
+                    "code": "DELAY_INTEREST"
+                  },
+                  "value": "2.5"
+                },
+                {
+                  "descriptor": {
+                    "code": "STATIC_TERMS"
+                  },
+                  "value": "https://www.icicibank.com/personal-banking/loans/personal-loan"
+                },
+                {
+                  "descriptor": {
+                    "code": "SETTLEMENT_AMOUNT"
+                  },
+                  "value": "400"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "items": [
+        {
+          "category_ids": [
+            "C2",
+            "C3"
+          ],
+          "descriptor": {
+            "name": "Activ One NXT",
+            "code": "CODI",
+            "long_desc": "Aditya Birla Health Insurance Activ One NXT",
+            "short_desc": "ABHI Activ One NXT"
+          },
+          "id": "CODI_Digital_I2",
+          "parent_item_id": "CODI_I2",
+          "tags": [
+            {
+              "descriptor": {
+                "name": "Activ One NXT Information",
+                "code": "GENERAL_INFO"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "name": "COVERAGE_AMOUNT",
+                    "code": "COVERAGE_AMOUNT"
+                  },
+                  "value": "2000000"
+                },
+                {
+                  "descriptor": {
+                    "name": "PolicyNumber",
+                    "code": "PolicyNumber"
+                  },
+                  "value": "31-23-0003445-00"
+                },
+                {
+                  "descriptor": {
+                    "name": "ReceiptNo",
+                    "code": "ReceiptNo"
+                  },
+                  "value": "DR-21-22-624994                                             "
+                },
+                {
+                  "descriptor": {
+                    "name": "ProposalNumber",
+                    "code": "ProposalNumber"
+                  },
+                  "value": "230001134011"
+                },
+                {
+                  "descriptor": {
+                    "name": "StpFlag",
+                    "code": "StpFlag"
+                  },
+                  "value": "STP"
+                },
+                {
+                  "descriptor": {
+                    "name": "PolicyStatus",
+                    "code": "PolicyStatus"
+                  }
+                }
+              ]
+            }
+          ],
+          "time": {
+            "duration": "P1Y",
+            "label": "TENURE"
+          },
+          "price": {
+            "value": "22431",
+            "currency": "INR"
+          },
+          "add_ons": [
+            {
+              "id": "SUPER_CREDIT",
+              "quantity": {
+                "available": {
+                  "count": 1
+                }
+              },
+              "descriptor": {
+                "name": "Super Credit",
+                "code": "SUPER_CREDIT"
+              }
+            },
+            {
+              "id": "CRITICAL_ILLNESS_COVER",
+              "quantity": {
+                "available": {
+                  "count": 1
+                }
+              },
+              "descriptor": {
+                "name": "CRITICAL ILLNESS COVER",
+                "code": "CRITICAL_ILLNESS_COVER"
+              }
+            }
+          ]
+        }
+      ],
+      "provider": {
+        "descriptor": {
+          "name": "Aditya Birla Capital Health Insurance",
+          "long_desc": "Buying Health Insurance Policy doesn't have to be difficult.",
+          "short_desc": "Aditya Birla Capital Health Insurance",
+          "images": [
+            {
+              "url": "https://marketingcontet.azureedge.net/assets/img/ABG_Birla-3D-Logo_Mobile.png",
+              "size_type": "xs"
+            }
+          ]
+        },
+        "id": "P1"
+      },
+      "quote": {
+        "id": "Q1",
+        "breakup": [
+          {
+            "price": {
+              "value": "22431",
+              "currency": "INR"
+            },
+            "title": "BASE_PRICE"
+          }
+        ],
+        "price": {
+          "value": "22431",
+          "currency": "INR"
+        }
+      },
+      "status": "FORM_PROCESSED",
+      "created_at": "2024-03-29T11:36:04.063Z",
+      "updated_at": "2024-03-29T11:36:04.063Z",
+      "id": "O31-23-0003445-00"
+    }
+  }
+}
