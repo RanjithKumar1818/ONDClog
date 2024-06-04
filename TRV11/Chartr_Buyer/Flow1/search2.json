@@ -1,0 +1,67 @@
+{
+  "context": {
+    "location": {
+      "country": {
+        "code": "IND"
+      },
+      "city": {
+        "code": "std:011"
+      }
+    },
+    "domain": "ONDC:TRV11",
+    "timestamp": "2024-05-25T14:03:33.040Z",
+    "bap_id": "dev-ondc-buyer-api.chartr.in",
+    "transaction_id": "c64a3313-fe57-433c-9d09-e787cd945fbc",
+    "message_id": "7e8f33df-88f5-431c-8060-d59581275341",
+    "version": "2.0.0",
+    "action": "search",
+    "bap_uri": "https://dev-ondc-buyer-api.chartr.in/api/v1/ondc/buyer",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "intent": {
+      "fulfillment": {
+        "stops": [
+          {
+            "type": "START",
+            "location": {
+              "descriptor": {
+                "code": "ROHINI_SEC_22_TERMINAL"
+              }
+            }
+          },
+          {
+            "type": "END",
+            "location": {
+              "descriptor": {
+                "code": "AVANTIKA_XING"
+              }
+            }
+          }
+        ],
+        "vehicle": {
+          "category": "BUS",
+          "registration": "DL1PC9997"
+        }
+      },
+      "payment": {
+        "tags": [
+          {
+            "descriptor": {
+              "code": "BUYER_FINDER_FEES"
+            },
+            "display": false,
+            "list": [
+              {
+                "descriptor": {
+                  "code": "BUYER_FINDER_FEES_PERCENTAGE"
+                },
+                "value": "1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
