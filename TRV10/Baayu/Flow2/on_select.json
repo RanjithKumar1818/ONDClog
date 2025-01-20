@@ -1,0 +1,153 @@
+{
+  "context": {
+    "action": "on_select",
+    "bap_id": "pramaan.ondc.org/beta/preprod/mock/buyer",
+    "bap_uri": "https://pramaan.ondc.org/beta/preprod/mock/buyer",
+    "bpp_id": "staging-mobility-ondc.baayu.app",
+    "bpp_uri": "https://staging-mobility-ondc.baayu.app/seller",
+    "domain": "ONDC:TRV10",
+    "location": {
+      "city": {
+        "code": "std:0361"
+      },
+      "country": {
+        "code": "IND"
+      }
+    },
+    "message_id": "a62f08c7-428e-4ba7-9082-7174d48594fb",
+    "timestamp": "2025-01-20T14:38:16.651Z",
+    "transaction_id": "b04f4ade-a257-4aec-b031-cbb2424a6e50",
+    "ttl": "PT10S",
+    "version": "2.0.1"
+  },
+  "message": {
+    "order": {
+      "fulfillments": [
+        {
+          "id": "9d0eed96-1808-4509-87cb-330b129a3710",
+          "stops": [
+            {
+              "location": {
+                "gps": "24.771200,93.935400"
+              },
+              "type": "END"
+            },
+            {
+              "location": {
+                "gps": "24.778400,93.936500"
+              },
+              "type": "START"
+            }
+          ],
+          "type": "DELIVERY",
+          "vehicle": {
+            "category": "TWO_WHEELER",
+            "energy_type": "ELECTRIC",
+            "variant": "TWO_WHEELER"
+          }
+        }
+      ],
+      "items": [
+        {
+          "descriptor": {
+            "code": "RIDE",
+            "name": "Bike Taxi"
+          },
+          "fulfillment_ids": [
+            "9d0eed96-1808-4509-87cb-330b129a3710"
+          ],
+          "id": "663484504ba1d9a3c08f5afb",
+          "price": {
+            "currency": "INR",
+            "value": "24.85"
+          },
+          "tags": [
+            {
+              "descriptor": {
+                "code": "FARE_POLICY",
+                "name": "Daytime Charges"
+              },
+              "display": true,
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "MIN_FARE"
+                  },
+                  "value": "0"
+                },
+                {
+                  "descriptor": {
+                    "code": "MIN_FARE_DISTANCE_KM"
+                  },
+                  "value": "0"
+                },
+                {
+                  "descriptor": {
+                    "code": "NIGHT_CHARGE_MULTIPLIER"
+                  },
+                  "value": "0"
+                },
+                {
+                  "descriptor": {
+                    "code": "NIGHT_SHIFT_END_TIME"
+                  },
+                  "value": "05:00:00"
+                },
+                {
+                  "descriptor": {
+                    "code": "NIGHT_SHIFT_START_TIME"
+                  },
+                  "value": "24:00:00"
+                },
+                {
+                  "descriptor": {
+                    "code": "PER_KM_CHARGE"
+                  },
+                  "value": "9"
+                },
+                {
+                  "descriptor": {
+                    "code": "PICKUP_CHARGE"
+                  },
+                  "value": "0"
+                },
+                {
+                  "descriptor": {
+                    "code": "WAITING_CHARGE_PER_MIN"
+                  },
+                  "value": "0"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "provider": {
+        "id": "Baayu"
+      },
+      "quote": {
+        "breakup": [
+          {
+            "price": {
+              "currency": "INR",
+              "value": "10.00"
+            },
+            "title": "BASE_FARE"
+          },
+          {
+            "price": {
+              "currency": "INR",
+              "value": "14.85"
+            },
+            "title": "DISTANCE_FARE"
+          }
+        ],
+        "price": {
+          "currency": "INR",
+          "value": "24.85"
+        },
+        "ttl": "PT300s"
+      }
+    }
+  }
+}
