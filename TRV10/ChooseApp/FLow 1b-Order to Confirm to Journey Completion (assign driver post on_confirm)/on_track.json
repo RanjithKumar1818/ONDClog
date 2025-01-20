@@ -1,0 +1,32 @@
+{
+  "context": {
+    "action": "on_track",
+    "bap_id": "backend.choosecabs.com",
+    "bap_uri": "https://backend.choosecabs.com/api/trv10",
+    "bpp_id": "pramaan.ondc.org/beta/preprod/mock/seller",
+    "bpp_uri": "https://pramaan.ondc.org/beta/preprod/mock/seller",
+    "domain": "ONDC:TRV10",
+    "location": {
+      "city": {
+        "code": "std:022"
+      },
+      "country": {
+        "code": "IND"
+      }
+    },
+    "message_id": "84abea40-7996-4111-9511-09c9b78dc04b",
+    "timestamp": "2025-01-15T11:04:00.099Z",
+    "transaction_id": "7de2cf7a-8313-4e97-ab35-366f206cc885",
+    "ttl": "PT10M",
+    "version": "2.0.1"
+  },
+  "message": {
+    "tracking": {
+      "status": "RIDE_ASSIGNED",
+      "location": {
+        "gps": "13.102163,77.593917",
+        "updated_at": "2025-01-15T11:04:00.099Z"
+      }
+    }
+  }
+}

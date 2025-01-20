@@ -1,0 +1,80 @@
+{
+  "context": {
+    "action": "search",
+    "bap_id": "backend.choosecabs.com",
+    "bap_uri": "https://backend.choosecabs.com/api/trv10",
+    "domain": "ONDC:TRV10",
+    "location": {
+      "city": {
+        "code": "std:022"
+      },
+      "country": {
+        "code": "IND"
+      }
+    },
+    "message_id": "a3022a8a-69af-428c-bfae-0264d929d758",
+    "timestamp": "2025-01-15T19:04:20.936Z",
+    "transaction_id": "e31c5103-234b-43d4-b38d-c1f03353c1c7",
+    "ttl": "PT1H",
+    "version": "2.0.1"
+  },
+  "message": {
+    "intent": {
+      "fulfillment": {
+        "stops": [
+          {
+            "location": {
+              "gps": "13.102163,77.593917"
+            },
+            "type": "START"
+          },
+          {
+            "location": {
+              "gps": "13.195290,77.652733"
+            },
+            "type": "END"
+          }
+        ]
+      },
+      "payment": {
+        "collected_by": "BPP",
+        "tags": [
+          {
+            "descriptor": {
+              "code": "BUYER_FINDER_FEES"
+            },
+            "display": true,
+            "list": [
+              {
+                "descriptor": {
+                  "code": "BUYER_FINDER_FEES_PERCENTAGE"
+                },
+                "value": "5"
+              }
+            ]
+          },
+          {
+            "descriptor": {
+              "code": "SETTLEMENT_TERMS"
+            },
+            "display": true,
+            "list": [
+              {
+                "descriptor": {
+                  "code": "DELAY_INTEREST"
+                },
+                "value": "3"
+              },
+              {
+                "descriptor": {
+                  "code": "STATIC_TERMS"
+                },
+                "value": "https://example-test-bap.com/static-terms.txt"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

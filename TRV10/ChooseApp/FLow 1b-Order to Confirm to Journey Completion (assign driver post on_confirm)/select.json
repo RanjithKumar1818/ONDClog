@@ -1,0 +1,35 @@
+{
+  "context": {
+    "action": "select",
+    "bap_id": "backend.choosecabs.com",
+    "bap_uri": "https://backend.choosecabs.com/api/trv10",
+    "bpp_id": "pramaan.ondc.org/beta/preprod/mock/seller",
+    "bpp_uri": "https://pramaan.ondc.org/beta/preprod/mock/seller",
+    "domain": "ONDC:TRV10",
+    "location": {
+      "city": {
+        "code": "std:022"
+      },
+      "country": {
+        "code": "IND"
+      }
+    },
+    "message_id": "5c020f3c-c4a1-4540-b6ef-75d8c6fb5a4c",
+    "timestamp": "2025-01-15T16:34:25.794Z",
+    "transaction_id": "7de2cf7a-8313-4e97-ab35-366f206cc885",
+    "ttl": "PT1H",
+    "version": "2.0.1"
+  },
+  "message": {
+    "order": {
+      "items": [
+        {
+          "id": "I3"
+        }
+      ],
+      "provider": {
+        "id": "OD_101"
+      }
+    }
+  }
+}
