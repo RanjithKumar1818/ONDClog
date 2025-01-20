@@ -1,0 +1,26 @@
+{
+    "context": {
+        "domain": "ONDC:LOG10",
+        "location": {
+            "city": {
+                "code": "std:080"
+            },
+            "country": {
+                "code": "IND"
+            }
+        },
+        "version": "2.0.0",
+        "ttl": "PT30S",
+        "action": "status",
+        "bap_id": "mock.ondc.org/api",
+        "bap_uri": "https://mock.ondc.org/api/logistics/bap",
+        "transaction_id": "3b88c378-8693-4a14-bae7-6bba6a122be1",
+        "message_id": "ac8fda9d-044b-482c-a945-5c61caba0d80",
+        "timestamp": "2025-01-20T14:42:40.470Z",
+        "bpp_id": "acrisvc.com",
+        "bpp_uri": "https://acrisvc.com"
+    },
+    "message": {
+        "order_id": "O2"
+    }
+}
